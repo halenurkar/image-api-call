@@ -3,7 +3,7 @@ import axios from 'axios';
 const searchImages=async(term)=>{
     const response = await axios.get('https://api.unsplash.com/search/photos',{
       headers:{
-        Authorization:'Client-ID GWw6FET-Yl7hMk3zAOYBDqxPLsJNQ8TspAntIlyHZ0o'
+        Authorization:'Client-ID ' // than Client-ID write the Acsess-key in Unsplash Developers
       },
       params:{
         query:term
